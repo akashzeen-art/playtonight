@@ -310,6 +310,12 @@
   color: #999;
 }
 
+.popup-form-input-readonly,
+.popup-form-input:read-only {
+  cursor: not-allowed;
+  opacity: 0.85;
+}
+
 /* =====================================================
    QUANTITY SELECTORS
    ===================================================== */

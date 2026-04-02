@@ -26,7 +26,7 @@ function CheckoutPage() {
   const [loading, setLoading] = useState(true)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [formData, setFormData] = useState({
-    name: 'Ron',
+    name: 'ABCD',
     phoneNumber: '',
     quantity: 1,
   })
@@ -220,12 +220,13 @@ function CheckoutPage() {
                 type="text"
                 id="scroll-popup-name"
                 name="name"
-                className="popup-form-input"
+                className="popup-form-input popup-form-input-readonly"
                 placeholder="Enter your full name"
                 required
+                readOnly
+                aria-readonly="true"
                 autoComplete="name"
                 value={formData.name}
-                onChange={handleInputChange}
               />
             </div>
             <div className="popup-form-group">
