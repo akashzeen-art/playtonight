@@ -1,0 +1,12 @@
+node_modules
+dist
+*.zip
+*.bak
+*.tmp
+.DS_Store
+*.local
+.env
+.env.*
+!.env.example
+npm-debug.log*
+.vite
